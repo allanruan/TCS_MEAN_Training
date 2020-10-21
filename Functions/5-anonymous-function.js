@@ -1,5 +1,4 @@
-//getFullNameAgain not callable anymore
-var  fullName  = function getFullNameAgain(){
+var  fullName  = function (){
     var fName  = document.getElementById('firstName').value
     var lName  = document.getElementById('lastName').value
     var age = document.getElementById('age').value
