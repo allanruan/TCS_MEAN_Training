@@ -1,4 +1,4 @@
-function getFullNameAgain(){
+var  fullName  = function getFullNameAgain(){
     var fName  = document.getElementById('firstName').value
     var lName  = document.getElementById('lastName').value
     var age = document.getElementById('age').value
