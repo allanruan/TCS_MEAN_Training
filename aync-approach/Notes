@@ -1,0 +1,9 @@
+Synchronous  Approach:
+
+Sync  Code  is executed in  sequence.
+Each statement waits  for the previous  statement to finish before executing.
+
+Asynchronous  Approach:
+
+Asynchronous  code doesn't have  to wait.
+Although, your program can continue to run.
