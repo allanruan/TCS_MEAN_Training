@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button type="button" onclick="setCookie()">Set Cookie</button>
+    <button type="button" onclick="getCookie()">Get Cookie</button>
+    <script>
+
+        function setCookie(name,value,daysToLive){
+            document.cookie = "username=bhawnagunwani";
+            document.cookie =  "password=123456"
+        }
+
+        function  getCookie(name){
+            if(document.cookie.length!=0){
+                // alert(document.cookie);
+                var cookies = document.cookie.split("::");
+                alert(cookies[0] + " and "  + cookies[1])
+            }else{
+                alert("cookie  is  not available..")
+            }
+        }
+    </script>
+</body>
+</html>

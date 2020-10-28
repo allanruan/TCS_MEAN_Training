@@ -1,0 +1,59 @@
+/** asterisk refers to whole document */
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Tag Selector  are  h1 h2 */
+h1,h2{
+    color:red;
+}
+p{
+    color:navy;
+    font-size: 24px;
+    text-align:justify
+}
+
+/*  id selector use hashtag for  id  selector
+    overrrides the above for the id only*/
+#para_one {
+    color:navy;
+    font-weight:bold;
+    font-size: 24px;
+    text-align:justify
+}
+
+#para_two{
+    color:brown;
+    font-size: 20px;
+    text-align:justify;
+    text-decoration: underline;
+}
+/* class  selector 
+    use .  to indicate class*/
+.para_three{
+    color:darkgoldenrod;
+    font-weight:bold;
+    background-color: pink;
+
+}
+.para_four{
+    color:darkgoldenrod;
+    font-weight: bold;
+    background-color: wheat;
+}
+
+.class_one{
+    color:navy;
+}
+.class_two{
+    font-family: cursive;
+}
+
+/*
+Class: 
+You  can apply more than one class selector  at one time.
+class selector can be  used as child selectors
+
+ID:
+you can only apply o ne id selector to one element at a time
+*/
