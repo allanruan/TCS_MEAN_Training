@@ -28,7 +28,18 @@
 function Person(fName,lName){
     this.firstName = fName || 'Unknown';
     this.lastName = lName  ||'Unknown';
-
+    //PascalCase  for properties
+    // Object.defineProperties(this,{
+    //     "FirstName": {
+    //         get:function() {return  this.firstName},
+    //         set:function(value) {this.firstName = value}
+    //     },
+    //     "LastName": {
+    //         get:function() {return  this.lastName},
+    //         set:function(value) {this.lastName = value}
+        
+    //     }
+    // })
 }
 
 var p1 = new Person();

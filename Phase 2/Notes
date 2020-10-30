@@ -1,0 +1,20 @@
+Phase 2:
+
+Working  with TypeScript
+Angular -CLientSide JavaScript  Framework
+NodeJS  - Server sider JavaScript Framework
+
+-----------------------------
+JavaScript is a  loosely-typed language
+    var value = 10
+    value = "King"
+TypeScript
+    -TypeScript is  an open source  language that compiles to JavaScript
+    -TypeScript is a typed superset of JavaScript that compiles to plain Javascript.
+    -A typed-support orstrongly-typed language scripting language
+    -TypeScript supports object oriented features
+    
+    value: number=100;
+    value = "King" //Error
+
+

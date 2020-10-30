@@ -10,8 +10,10 @@
  var promise =  new Promise(function (resolve,reject){
      var status = true;
      if(status){
+         //args  are passed to then
          resolve("Your status is active..");
      }else{
+         //arg passed to catch
          reject("Your Status is inactive.")
      }
  })

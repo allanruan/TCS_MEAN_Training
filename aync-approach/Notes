@@ -7,3 +7,9 @@ Asynchronous  Approach:
 
 Asynchronous  code doesn't have  to wait.
 Although, your program can continue to run.
+it helps in reducing the waiting time for  the user.
+
+To  write async code  in JS/Node.js, you can use:
+    1. Callback
+    2. Promises
+    3. Async/await

@@ -1,3 +1,5 @@
+//anonymous function (Unnamed function) -
+/**Helps in callback,  arrow function or passing function inside another function */
 var  fullName  = function (){
     var fName  = document.getElementById('firstName').value
     var lName  = document.getElementById('lastName').value

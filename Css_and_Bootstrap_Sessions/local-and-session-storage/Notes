@@ -12,3 +12,23 @@ Cookies:
 
 The information stored in cookies is always sent to the web server with every request
 In cookie, you can store data near 4KB(Small in size).
+more secure because it is sent over the web server
+
+Two types of Web Storage:
+
+    - Local Storage
+        The local storage use the  localStorage object to store the data.
+        This stores the data for your  website or application on a permanent basis.
+        The  data  will be  available on  the next day,  the  next week or unless you remove it
+        Like messaging app where your data still available later on
+    - Session Storage
+        The session storage use the sessionStorage object to store the data.
+        This  store the data for your website  on a temporary basis
+        The data disappears when  the session ends or browser or tab is closed
+        Like banking app - all data is reset when session expired
+
+        ------------------------------------------------------------------------
+        Cookies:
+
+        - A small  text file to store a small  amount of data (around 4KB)  on user's computer.
+        

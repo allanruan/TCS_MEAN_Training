@@ -1,0 +1,46 @@
+MEAN
+
+N- NODEJS
+    - A server side JS framework
+    - helps us to communicate with database, file-system, network,socket,api
+    and so on
+    - NodeJS installation also contains NPM module in it.
+    - NPM (Node Package Manager)
+    - Helps in managing packages such as add, update, remove and so on
+
+npm init 
+npm start 
+npm install
+    no arg downloads all dependencies
+npm install bootstrap@version (use latest for last)
+npm update bootstrap
+
+npm uninstall bootstrap
+
+npm install typescript --global
+
+-------------------------------------------
+local packages
+    -installed in package and added dependency
+global packages
+    -for packages that need access to os resources
+    -also for packages that are huge that you dont want to reinstall
+    to each project directory every time
+    -ie: typescript and angular
+
+angular CLI package:
+    - Helps in managing Angular project like
+        generate new project,
+        add components, service, classes and so on.
+    - similar to eclipse new project structures
+npm install @angular/cli -g
+npm install @angular/cli --global
+
+ng --version
+--------------------------------------------------
+
+Go To Project Folder:
+
+ng new angular_fundamentals
+cd angular_fundamentals
+ng serve
