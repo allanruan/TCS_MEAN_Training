@@ -21,10 +21,10 @@
 //  func();
 //  console.log(value);        //Error
 
-const value = 100;
+const value = 100;          //block scope but fixed cannot be changed
 function func(){
     if(true){
-        value = 200;    //Defined locally (the scope ends when curly brace ends)
+        let value = 200;    //Defined locally (the scope ends when curly brace ends)
         console.log(value)
     }
     console.log(value);

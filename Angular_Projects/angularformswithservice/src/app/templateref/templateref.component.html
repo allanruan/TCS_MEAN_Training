@@ -1,0 +1,16 @@
+<div>
+    <!-- #uname is template reference-->
+    <input #uname type="text" name="uname" id="uname">
+    <br>
+    <!-- (click) is angular function to use typescript function. Onclick is HTML to use js func-->
+    <input type="button" value="Click Here" (click)="fun(uname.value)">
+    <hr>
+    Welcome {{fname}}
+    <hr>
+    <!-- key up is an event or when we release key event is fired
+    0 is a dummy value a flag function
+    keyup when release, keydown when pressed-->
+    <input #msg type="text" (keyup)="0">
+    <br>
+    {{msg.value}}
+</div>

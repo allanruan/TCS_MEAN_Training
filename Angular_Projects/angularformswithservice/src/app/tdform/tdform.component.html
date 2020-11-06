@@ -1,0 +1,38 @@
+<div>
+    <!-- ngForm is a pre-defined attribute which help to create
+    the reference of form for 2 way binding. Always json format
+    from ngForm format-->
+    <h2>Login Page using TDF</h2>
+    <!-- novalidate disables html validate -->
+    <form #userRef="ngForm" (ngSubmit)="checkLogin(userRef.value)"
+    novalidate>
+        <label>UserName</label>
+        <!-- no need for banana bracket now [()]
+        touched - control visited
+        dirty - control changed
+        valid - control is valid (required, pattern, min-value,maxvalue, error)
+        -->
+        <input type="text" name="uname" ngModel required #nameRef="ngModel" minlength="3">
+        <br>
+        <div *ngIf="nameRef.errors && (nameRef.dirty || nameRef.touched)">
+            <span [hidden]="!nameRef.errors.required">
+                UserName is required.
+            </span>
+            <span [hidden]="!nameRef.errors.minlength">
+                Min length must be 3 characters
+            </span>
+        </div>
+        <label>Password</label>
+        <input type="text" name="password" ngModel required #passRef="ngModel" pattern="\d{3}@\D{2}"><br>
+        <div *ngIf="passRef.errors && (passRef.dirty || passRef.touched)">
+            <span [hidden]="!passRef.errors.required">
+                Password is required.
+            </span>
+            <span [hidden]="!passRef.errors.pattern">
+                Must follow 123@AB.
+            </span>
+        </div>
+        <input type="submit" value="Submit" [disabled]="!userRef.valid">
+    </form>
+    {{msg}}
+</div>
