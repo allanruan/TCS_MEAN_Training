@@ -1,0 +1,83 @@
+<div *ngIf="flag==1">
+<h3>This quiz will cover the following:</h3>
+<ul>
+    <li>Useful commands in angular projects</li>
+    <li>Important packages</li>
+    <li>Angular Directives</li>
+    <dd><input type="button" value= "Start Quiz" (click)="startQuiz()"></dd>
+</ul>
+
+</div>
+
+<div *ngIf="flag==2">
+<ng-container *ngFor="let q of quiz;let i=index">
+    <input type="button" id="qButton" value="Q{{i+1}}" style="margin-right: 5px;" (click)="loadQuestion(i)">
+</ng-container>
+<hr>
+<h3>Question {{qNo+1}}. {{quiz[qNo].q}} </h3>
+
+<div id="ans">
+<ng-container *ngIf="answers[qNo]=='a'">
+    <input type="radio" name="ans" value="a" (click)="selectAns('a')" checked>A. {{quiz[qNo].a}}
+</ng-container>
+<ng-container *ngIf="answers[qNo]!=='a'">
+    <input type="radio" name="ans" value="a" (click)="selectAns('a')">A. {{quiz[qNo].a}}
+</ng-container>
+</div>
+<div id="ans">
+<ng-container *ngIf="answers[qNo]=='b'">
+    <input type="radio" name="ans" value="b" (click)="selectAns('b')" checked>B. {{quiz[qNo].b}}
+</ng-container>
+<ng-container *ngIf="answers[qNo]!=='b'">
+    <input type="radio" name="ans" value="b" (click)="selectAns('b')">B. {{quiz[qNo].b}}
+</ng-container>
+</div>
+<div id="ans">
+<ng-container *ngIf="answers[qNo]=='c'">
+<input type="radio" name="ans" value="c" (click)="selectAns('c')" checked>C. {{quiz[qNo].c}}
+</ng-container>
+<ng-container *ngIf="answers[qNo]!=='c'">
+    <input type="radio" name="ans" value="c" (click)="selectAns('c')" >C. {{quiz[qNo].c}}
+</ng-container>
+</div>
+<div id="ans">
+<ng-container *ngIf="answers[qNo]=='d'">
+    <input type="radio" name="ans" value="d" (click)="selectAns('d')" checked>D. {{quiz[qNo].d}}
+</ng-container>
+<ng-container *ngIf="answers[qNo]!=='d'">
+    <input type="radio" name="ans" value="d" (click)="selectAns('d')" >D. {{quiz[qNo].d}}
+</ng-container>
+</div>
+<div>
+<ng-container *ngIf="answers[qNo]==undefined">
+    <input type="radio" name="ans" value="e" checked disabled style="position: fixed; opacity: 0; pointer-events: none;">
+</ng-container>
+</div>
+<button value="prev" style="margin-right: 10px;" (click)="loadPrev()">Previous</button>
+<button value="next" (click)="loadNext()">Next</button>
+</div>
+
+
+<div *ngIf="flag==3">
+    <ng-container *ngFor="let q of quiz;let i=index">
+        <ng-container *ngIf="answers[i]!==undefined">
+            <input type="button" id="revButton" value="Q{{i+1}}: Answered {{answers[i]}}" style="margin-right: 5.5px; width:32%;background-color: chartreuse;" (click)="loadQuestion(i)">
+        </ng-container>
+        <ng-container *ngIf="answers[i] == undefined">
+            <input type="button" id="revButton" value="Q{{i+1}}: Unanswered {{answers[i]}}" style="margin-right: 5.5px; width:32%;background-color: red;" (click)="loadQuestion(i)">
+        </ng-container>
+    </ng-container>
+
+</div>
+<div *ngIf="flag==2||flag==3">
+<br>
+<br>
+<hr>
+<button value="review" style="margin-right: 10px;" (click)="reviewQuiz()">Review</button>
+<button value="submit" (click)="scoreQuiz()">Submit</button>
+</div>
+
+<div *ngIf="flag==4">
+    <h1>You have submitted the quiz</h1>
+    <h1>Your Score is {{(score*100).toPrecision(4)}}%</h1>
+</div>

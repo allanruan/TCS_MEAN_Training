@@ -1,0 +1,13 @@
+{"quiz":[
+	{"q": "How do you create a new angular project?","a": "ng new <project-name>","b": "ng create <project-name>","c": "angular new <project name>","d": "ng init <project name>","ans":"a"},	
+	{"q": "What angular command is used to startup angular server?","a": "ng start","b": "ng serve","c": "ng server","d": "angular serve", "ans":"b"},	
+	{"q": "What is the package manager used in angular?","a": "Popper","b": "Bootstrap","c": "Jquery","d": "NPM", "ans":"d"},	
+	{"q": "Which file stores the dependencies in angular project?","a": "app.module.ts","b": "angular.json","c": "package.json","d": "tsconfig.json", "ans":"c"},	
+	{"q": "What is MEAN stack?","a": "MongoDB, Express.js, Angular.js, Node.js","b": "Data structure that has an attitude","c": "MangoDB, Edge, Angular.js, NPM","d": "Attitude to programming", "ans":"a"},	
+	{"q": "What NPM command is used to track packages in a project?","a": "npm track","b": "npm init","c": "npm node","d": "npm serve", "ans":"b"},	
+	{"q": "Which angular directive is used to loop an iterable?","a": "*ngFor","b": "*ngIf","c": "ngOnInit","d": "ngOnChange", "ans":"a"},	
+	{"q": "What is observable?","a": "a callback promise","b": "a way to observe changes in angular project","c": "GUI for angular project","d": "Shows tips to observe ng commands", "ans":"a"},	
+	{"q": "What is ngModel used for?","a": "used for modelling regression","b": "used for two way communication between component and view and form control","c": "a blueprint for writing ng projects","d": "enable 3D models in angular", "ans":"b"},	
+	{"q": "Which of the following is used for connecting to external api?","a": "HTMLClient","b": "PHPClient","c": "HTTPClient","d": "AngularClient", "ans":"c"},	
+	{"q": "Which of the following is not a http method?","a": "Post","b": "Put","c": "Get","d": "Remove", "ans":"d"}	
+]}
